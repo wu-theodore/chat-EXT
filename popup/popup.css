@@ -1,0 +1,43 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+h1 {
+    margin-top: 10px;
+}
+
+.header {
+    font-weight: bold;
+}
+
+.options {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+/* Style the option buttons */
+.option-button {
+    flex-basis: 30%;
+    border: 1px solid #ccc;
+    padding: 10px;
+    cursor: pointer;
+    text-align: center;
+  }
+  
+/* Style the "None/Manual" button when selected */
+.option-button.selected {
+    background-color: #333;
+    color: #fff;
+}
+  
+.option-button:hover {
+    background-color: #f0f0f0;
+}
+
+/* Style the text box */
+.text-box1, .text-box2 {
+    margin-top: 20px;
+}
+  

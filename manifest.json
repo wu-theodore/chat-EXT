@@ -1,0 +1,31 @@
+{
+    "manifest_version": 3,
+    "name": "ChatEXT",
+    "version": "1.0",
+    "description": "An extension that uses the ChatGPT API to process selected text within a webpage",
+    "author": "Theodore Wu",
+    "icons": {
+      "16": "icons/icon16.png",
+      "32": "icons/icon32.png",
+      "48": "icons/icon48.png",
+      "128": "icons/icon128.png"
+    },
+    "action": {
+      "default_popup": "popup/popup.html"
+    },
+    "permissions": [
+      "activeTab",
+      "clipboardWrite"
+    ],
+    "background": {
+      "service_worker": "background/background.js"
+    },
+    "content_scripts": [
+      {
+        "matches": ["<all_urls>"],
+        "js": ["content_scripts/content.js"],
+        "css": ["content_scripts/content.css"]
+      }
+    ]
+}
+  

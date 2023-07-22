@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Chat-EXT</title>
+  <link rel="stylesheet" type="text/css" href="popup.css">
+</head>
+<body>
+  <h1>Chat-EXT</h1>
+  <div class="header">Extract Text</div>
+  <div class="options">
+    <div class="option-button" id="entire-webpage">Entire Webpage</div>
+    <div class="option-button" id="highlighted-text">Highlighted Text</div>
+    <div class="option-button" id="none-manual">None/Manual</div>
+  </div>
+
+  <div id="text-box1" style="display: none;">
+    <input type="text" id="manual-text" placeholder="Enter manual text">
+  </div>
+
+  <div class="header">Perform Function</div>
+  <div class="options">
+    <div class="option-button" id="summarize">Summarize</div>
+    <div class="option-button" id="paraphrase">Paraphrase</div>
+    <div class="option-button" id="custom-prompt">Custom Prompt</div>
+  </div>
+
+  <div id="text-box2" style="display: none;">
+    <input type="text" id="custom-text" placeholder="Enter custom prompt">
+  </div>
+
+  <!-- Button to generate response -->
+  <button id="generate-response-btn">Generate Response</button>
+  <!-- Read-only textbox to display the background process output -->
+  <div id="response-output">
+    <textarea readonly></textarea>
+  </div>
+
+  <script src="popup.js"></script>
+</body>
+</html>
